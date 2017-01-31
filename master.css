@@ -1,0 +1,105 @@
+* { box-sizing: border-box; }
+
+
+body {
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	max-width: 960px;
+	width:100%;
+	position: relative;
+	margin: 0 auto;
+	padding-bottom: 2rem;
+}
+
+body main { 
+	line-height: 1.5;
+	max-width: 960px;
+	width: 100%;
+	position: relative;
+	padding-bottom: 1rem;
+}
+
+img {
+	width:100%;
+	height: auto;
+}
+.container {
+	width: 100%;
+	max-width: 960px;
+	position: relative;
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+.logo {
+	margin: 0 auto;
+	width: 200px;
+}
+
+h1 {
+	font-family: 'Libre Baskerville', serif;
+	font-size: 48px;
+	letter-spacing: 1px;
+}
+
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	font-weight: bold;
+}
+
+footer {
+	font-family: 'Libre Baskerville', serif;
+	font-size: .8rem;
+}
+
+nav {
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+nav ul {
+	padding: 0;
+		margin: auto;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #fff;
+}
+
+
+li {
+	position: relative;
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+
+li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 500px) {
+	body {
+		background-color: black;
+	}
+}

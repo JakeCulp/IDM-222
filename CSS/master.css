@@ -59,21 +59,9 @@ footer {
 
 nav {
 	letter-spacing: 2px;
-	display: flex;
-	font-size: 1.25rem;
+	font-size: 1rem;
 	text-align: center;
-	justify-content: center;
 	text-transform: uppercase;
-}
-
-nav ul {
-	padding: 0;
-	margin: auto;
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 0 auto;
 }
 
 ul {
@@ -84,6 +72,9 @@ ul {
     padding: 0;
     background-color: #fff;
     font-weight: bold;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: stretch;
 }
 
 
@@ -101,7 +92,13 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
-
+@media screen and (max-width: 35rem) {
+	ul {
+		display: flex;
+		flex-flow: column wrap;
+		align-content: stretch;
+	}
+}
 @media screen and (max-width: 37.5rem) {
 /* 600 px */
 	h1 {

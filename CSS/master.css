@@ -1,6 +1,5 @@
 * { box-sizing: border-box; }
 
-
 body {
 	font-size: 1rem;
 	font-family: 'Montserrat', sans-serif;
@@ -8,7 +7,15 @@ body {
 	width:100%;
 	position: relative;
 	margin: 0 auto;
-	padding-bottom: 2rem;
+	padding: 0 1rem 2rem 1rem;
+
+	display: flex;
+	flex-direction: column;
+
+}
+
+a#openup {
+	display: none;
 }
 
 body main { 
@@ -92,13 +99,18 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
+
 @media screen and (max-width: 35rem) {
 	ul {
 		display: flex;
 		flex-flow: column wrap;
 		align-content: stretch;
 	}
+
+
 }
+
+
 @media screen and (max-width: 37.5rem) {
 /* 600 px */
 	h1 {
@@ -158,45 +170,44 @@ li a {
 	}
 }
 
-/* Adding Grid System Here */
 
-.row {
-  overflow: auto;
-  margin-bottom: 16px;
-}
-.row::after {
-    content: "";
-    clear: both;
-    display: block;
-}
+@media screen and (max-width: 36.38rem) {
 
-[class*="col-"] {
-  /*background-color: rgba(45, 157, 192, 0.2);
-  border: 1px solid #2d9dc0;*/
-  padding: 16px;
-  width: 100%;*/
-}
-
-@media screen and (min-width: 600px) {
-  [class*="col-"] {
-    /*background-color: rgba(242, 33, 56, 0.2);
-    border: 1px solid rgba(249, 38, 114, 1);*/
-  }
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-
-  [class*="col-"] {
-    float: left;
-  }
+	nav {
+		height: auto;
+	}
+	nav ul {
+		display: none;
+		height: auto;
+	}
+	nav li {
+		width: 100%;
+		float: left;
+		position: relative;
+		border-bottom: solid 1px lightgrey;
+	}
+	nav a {
+		text-align: center;
+		width: 100%;
+		font-size:: 0.75rem;
+	}
+	nav a#openup:after {
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		position: absolute;
+		right: 5px;
+		top: 20px;
+	}
+	nav a#openup {
+		display: block;
+		width: 100%;
+		position: relative;
+		text-align: center;
+		font-size: 2rem;
+	}
+	.container {
+		padding: 2rem 0 0 0;
+	}
 
 }
